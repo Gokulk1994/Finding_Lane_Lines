@@ -3,7 +3,13 @@ This project identifies straight lane lines in a highway
 
 **Objective:**
 
-The main aim of the project is to identify the left and right lanes in a video. The identified lanes shall be averaged and extrapolated and a final solid line shall be drawn over the actual image.
+The main aim of the project is to identify the left and right lanes in a video. The identified lanes shall be averaged and extrapolated and a final solid line shall be drawn over the actual image. The algorithm should detect lanes in three different videos, namely
+
+1. Solid White lane video
+2. Solid Yellow lane video
+3. Challenge Video : Video with more curves, shadows and color gradients
+
+The input videos are added in the folder "test_videos".
 
 **Pipeline:**
 
@@ -19,6 +25,21 @@ The main aim of the project is to identify the left and right lanes in a video. 
 10. The identified lanes are **merged** with the actual images in the video. 
 
 **Output:**
+
+_1. Image with White Lanes :_ 
+
+   ![Image with White Lane Lines](Output_Images/WhiteLaneOutput.png)
+
+_2. Image with Yellow Lanes :_
+
+  ![Image with Yellow Lane Lines](Output_Images/YellowLaneOutput.png)
+
+_3. Image with curvy lanes:_
+
+  ![Image with Curvy Lanes](Output_Images/CurvyLanes.png)
+
+
+**The output videos are stored in the folder "Output_Videos".**
 
 **Potential Shortcomings:**
 
