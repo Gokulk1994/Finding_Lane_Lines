@@ -1,4 +1,4 @@
-# Finding_Lane_Lines
+# Finding Lane Lines
 This project identifies straight lane lines in a highway
 
 **Objective:**
@@ -7,16 +7,16 @@ The main aim of the project is to identify the left and right lanes in a video. 
 
 **Pipeline:**
 
-1. Change the Image from RGB to HSV.
-2. Choose the colour selection based on the lane colour in HSV mode. Choose yellow and white colour and mask it with the actual image.
-3. The noise was removed and image was smoothened using Gaussian blur function.
-4. The edges in the images was detected using Canny edge detection.
-5. The region in which lanes are present are masked using a polygon mask.
-6. The Lines inside the masked region are identified using Hough Transform function.
-7. Slope and Intercept was calculated for each line and Left and right lanes are separated using the slope value. If slope is negative it is considered left lane and vice versa.
-8. The Identified lines are then averaged and a final slope and intercept was calculated separately for left and right lanes.
-9. With the help of slope, intercept and older data, the lines were extrapolated and final points to draw lanes are identified.
-10. The identified lanes are added with the actual images in the video. 
+1. Change the Image from **RGB to HSV**.
+2. Choose the **colour selection** based on the lane colour in HSV mode. Choose yellow and white colour and mask it with the actual image.
+3. The noise was removed and image was smoothened using **Gaussian blur** function.
+4. The edges in the images was detected using **Canny edge detection**.
+5. The **region** in which lanes are present are **masked using a polygon mask**.
+6. The Lines inside the masked region are identified using **Hough Transform** function.
+7. **Slope and Intercept** was calculated for each line and Left and right lanes are separated using the slope value. If slope is negative it is considered left lane and vice versa.
+8. The Identified lines are then **averaged** and a final slope and intercept was calculated separately for left and right lanes.
+9. With the help of slope, intercept and older data, the lines were **extrapolated** and final points to draw lanes are identified.
+10. The identified lanes are **merged** with the actual images in the video. 
 
 **Output:**
 
